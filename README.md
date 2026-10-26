@@ -1,16 +1,65 @@
-# React + Vite
+# Celebrare Photo Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive photo gallery built with React, Vite, and Tailwind CSS as part of the Celebrare Frontend Intern Pre-Screening Assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fetches 30 photos from the Picsum Photos API.
+- Displays photos in a responsive grid.
+- Searches photos by author name in real time.
+- Adds and removes favourites using React `useReducer`.
+- Persists favourites across page refreshes using `localStorage`.
+- Handles loading and API error states.
+- Uses a custom `useFetchPhotos` hook.
+- Uses `useCallback` and `useMemo` for the search functionality.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- Picsum Photos API
+- JavaScript
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Harshaditya1/celebrare-photo-gallery.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd celebrare-photo-gallery
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal.
+
+## API
+
+`https://picsum.photos/v2/list?limit=30`
+
+## Assignment
+
+Celebrare — Frontend Intern Pre-Screening Assignment.
